@@ -24,11 +24,11 @@ urlpatterns = [
     path('register/', views.register_view, name='register'),
     path('logout/', views.logout_view, name='logout'),
     path('create/', views.create, name='create'),
-    # path('create_project/', views.create_project, name='create_project'), 
-    path('create_code/',views.create_code, name="create_code"),# Assuming you have a create_code view
+   
+    path('create_code/',views.create_code, name="create_code"),
     path('view_project/', views.view_project, name='view_project'),
-    path('view_details/<int:id>/', views.view_project, name='view_details'),  # Assuming you have a view_details view
-    path('project_delete/<int:id>/', views.view_project, name='project_delete'),  # Assuming you have a project_delete view
+    path('view_details/<int:id>/', views.view_project, name='view_details'),
+    path('project_delete/<int:id>/', views.view_project, name='project_delete'), 
     path('add_todos/<int:id>/', views.add_todos, name='add_todos'),
     path('add_todos_code/', views.add_todos_code, name='add_todos_code'),
     path('show_todos/<int:project_id>/', views.show_todos, name='show_todos'),
